@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 
   </head>
-  
+
   <body>
     <header>
         <div class="banner">
@@ -47,8 +47,7 @@
             <div class="header-flex">
                 <img  src="img/logo.jpg">
                 <h1>Chef Stories</h1>
-                <h2>Find a Recipe:</h2>
-                <input type="text" name="search" placeholder="Search..">
+                <input type="text" name="search" placeholder="Find a Recipe">
             </div>
         </div>
         <div id="slider">
@@ -61,58 +60,82 @@
             </figure>
         </div>
 
-    </header>
-    <div class="content">
-            <div class="container">
-                <h3>most recent</h3>
-                <div class="container-flex">
-                    <div class="listing">
-                        <img src="img/listing.jpg">
-                        <a href="recipemockup.html">Fettuccine Alfredo with Mushrooms</a>
-                        <p> Fettuccine alfredo with mushrooms brings a mix of cheesy, creamy and earthy flavors together. It's a 
-                            restaurant-worthy dish you can totally make at home.</p>
-                        <a href ="recipemockup.html"> <button class="button-nav"> Read More </button></a>
-                    </div>
-                    <div class="listing">
-                        <img src="img/listing2.jpg">
-                        <a href="recipemockup.html">Skillet Pork Chops with Cabbage</a>
-                        <p>Pork chops cooked low and slow become so tender and juicy—and so do the cabbage and apples that cook with 
-                            them. Serve with a cold beer and imagine yourself at a biergarten in Germany.</p>
-                        <a href ="recipemockup.html"> <button class="button-nav"> Read More </button></a>
-                    </div>
-                    <div class="listing"></div>
-                </div>
-                <h3> categories</h3>
-                <div class="container-flex">
-                    <div class="listing">
-                        <img src="img/cat1.jpg">
-                        <a href="recipemockup.html">Weeknight Dinner Recipes</a>
-                    </div>
-                    <div class="listing">
-                            <img src="img/cat2.jpg">
-                            <a href="recipemockup.html">Vegetarian Meals</a>
-                    </div>
-                    <div class="listing">
-                            <img src="img/cat3.jpg">
-                            <a href="recipemockup.html">Potato Salad Recipes</a>
-                    </div>
-                    <div class="listing">
-                            <img src="img/cat4.jpg">
-                            <a href="recipemockup.html">Soup Recipes</a>
-                    </div>
-                    <div class="listing"></div>
-                </div>
+      </header>
+      <div class="content">
+              <div class="container">
+                  <h3>most recent</h3>
+                  <div class="container-flex">
+                      <div class="listing">
+                          <img src="img/listing.jpg">
+                          <a href="Fettuccine.html">Fettuccine Alfredo with Mushrooms</a>
+                          <p> Fettuccine alfredo with mushrooms brings a mix of cheesy, creamy and earthy flavors together. It's a
+                              restaurant-worthy dish you can totally make at home.</p>
+                          <a href ="Fettuccine.html"> <button class="button-nav"> Read More </button></a>
+                      </div>
+                      <div class="listing">
+                          <img src="img/listing2.jpg">
+                          <a href="Fettuccine.html">Skillet Pork Chops with Cabbage</a>
+                          <p>Pork chops cooked low and slow become so tender and juicy—and so do the cabbage and apples that cook with
+                              them. Serve with a cold beer and imagine yourself at a biergarten in Germany.</p>
+                          <a href ="Fettuccine.html"> <button class="button-nav"> Read More </button></a>
+                      </div>
+                      <div class="listing"></div>
+                  </div>
 
-            </div>
-        </div>
+                  <h3> categories</h3>
 
-    <footer>
-      <div class="container">
-          <h5>Subscribe to our newsletter:</h5>
-          <input type="email" name="search" placeholder="Email address..">
-      </div>
-    </footer>
-  </body>
+                  <div class="container-flex">
+                      <div class="listing">
+                          <img src="img/cat1.jpg">
+                          <a href="dinner.html">Dinner Recipes</a>
+                      </div>
+                      <div class="listing">
+                              <img src="img/cat2.jpg">
+                              <a href="vegetarian.html">Vegetarian Meals</a>
+                      </div>
+                      <div class="listing">
+                              <img src="img/Categories/Salad.jpg">
+                              <a href="potatoSalad.html">Salads</a>
+                      </div>
+                      <div class="listing">
+                              <img src="img/cat4.jpg">
+                              <a href="lunch.html">Lunch Recipes</a>
+                      </div>
+                  </div>
+
+                  <div class="container-flex">
+                    <div class="listing">
+                            <img src="img/Categories/breakfast.jpg">
+                            <a href="breakfast.html">Breakfast</a>
+                    </div>
+                    <div class="listing">
+                            <img src="img/Categories/desert.jpg">
+                            <a href="deserts.html">Deserts</a>
+                    </div>
+                    <div class="listing">
+                            <img src="img/Categories/drinks.jpg">
+                            <a href="drinks.html">Drinks</a>
+                    </div>
+                    <div class="listing">
+                            <img src="img/Categories/snacks.jpg">
+                            <a href="snacks.html">Snacks</a>
+                    </div>
+                  </div>
+
+              </div>
+
+              <div class="footer">
+                  <h5>Subscribe to our newsletter:</h5>
+                  <input type="email" name="search" placeholder="Email address..">
+             </div>
+
+          </div>
+
+
+    </body>
+
+
+
 
   <script src="jquery-3.3.1.min.js"></script>
   <script> src="menu.js"</script>
@@ -121,7 +144,7 @@
         $(document).ready(function(){
         $(".burger-toggle").on("click",function(){
             $(".nav-menu-burger").toggleClass("open");
-            
+
         });
     });
   </script>

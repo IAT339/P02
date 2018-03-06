@@ -42,7 +42,7 @@ div{
         display:flex;
         cursor:pointer;
     }
- 
+
 
 }
 
@@ -50,5 +50,5 @@ div{
     .nav-menu-burger.open{
         display:none;
     }
-    
+
 }

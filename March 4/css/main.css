@@ -79,13 +79,9 @@ footer {
     display:flex;
 }
 
-.header-flex img{
-    /*max-width:5%;
-    max-height:5%;
-    min-height:3%;
-    min-width:3%; */
-    width:5%;
-    max-height: 5%;
+.header-flex img, .nav-menu-company img{
+    width:57px;
+    max-height: 57px;
     margin-right:10px;
 }
 h1{
@@ -99,7 +95,6 @@ h1{
 h2 {
     font-family: Lato, Helvetica, sans-serif;
     font-size:1.2em;
-    margin:auto;
     color:#0b725a;
 }
 
@@ -125,15 +120,14 @@ h5 {
 }
 
 input[type=text] {
-	width: 20%;
+	width: 100%;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 	background-color: white;
     background-repeat: no-repeat;
     padding: 5px 5px 5px 10px;
-    float:right;
     margin:auto;
     margin-left:10px;
 }
@@ -257,13 +251,6 @@ input[type=search] {
     margin-left:30px;
     margin-right:300px;
 }
-
-.profile-img{
-    justify-content: flex-end;
-    height:24px;
-    width:24px;
-}
-
 .menu {
     justify-content: flex-end;
     height:24px;
@@ -271,31 +258,21 @@ input[type=search] {
     margin-right:15px;
 }
 
-/*label {
-    justify-content: flex-end;
-    margin-right:15px;
-    color: white;
-    font-size:1.17em;
-    display:none;
-}
-#toggle {
-    display:none;
-} */
-
 .burger-toggle{
     justify-content: flex-end;
     margin-right:15px;
     color: white;
-    font-size:1.17em;
+    font-size:1.3em;
     display:none;
     text-decoration:none;
+    
 }
+
 .nav-menu-burger{
     display:none;
     width:100%;
     background-color: black;
-    height:0;
-   
+    height:0; 
 }
 .nav-menu-burger.open{
     height:auto;
@@ -314,21 +291,39 @@ input[type=search] {
 }
 .nav-menu-burger a:hover{
     background-color:green;
+    
 }
-.profile {
+.cart {
     display:flex;
     align-items:center;
     justify-content: flex-end;
 }
 
-.profile a{
-    color:white;
-    font-size:.8em;
-    margin-right:12px;
+.cart a{
+    display:flex;
+    color:#68C3A3;
+    font-size:1em;
     cursor:pointer;
+    
+}
+
+.cart a:hover{
+    filter: contrast(60%);
+}
+.cart-icon{
+    justify-content: flex-end;
+    height:24px;
+    width:24px;
+    margin-right:5px;
+
 }
 
 img{
-    widows: 100%;
+    widows:100%;
     height:auto;
 }
+.nav-menu-company{
+    display:none;
+}
+
+

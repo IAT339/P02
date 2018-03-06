@@ -21,16 +21,17 @@
                 <div class="container-flex-split">
                     <ul class="nav-menu">
                         <li><a href="index.html">home</a></li>
-                        <li><a href="recipes.html">recipes</a></li>
-                        <li><a href="ingredients.html">ingredients</a></li>
-                        <li><a href="videos.html">videos</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">browse recipes</a></li>
+                        <li><a href="#">ingredient search</a></li>
                     </ul>
-                    <!-- <label for="toggle">&#9776;</label>
-                        <input type="checkbox" id="toggle" /> -->
                     <a class="burger-toggle">&#9776;</a>
-                    <div class="profile">
-                        <a> Login </a>
-                        <img class="profile-img" src="img/profile.png">
+                    <div class="nav-menu-company">
+                        <img src="img/logo.png">
+                        <h1>Chef Stories</h1>
+                    </div>
+                    <div class="cart">
+                        <a><img class="cart-icon" src="img/cart.png"> 4</a>
                     </div>
 
                 </div>
@@ -38,17 +39,19 @@
         </div>
         <div class="nav-menu-burger">
                 <a href="index.html">home</a>
-                <a href="recipes.html">recipes</a>
-                <a href="ingredients.html">ingredients</a>
-                <a href="videos.html">videos</a>
+                <a href="#">recipes</a>
+                <a href="#">browse recipes</a>
+                <a href="#">ingredient search</a>
         </div>
-
         <div class="container">
             <div class="header-flex">
-                <img  src="img/logo.jpg">
-                <h1>Chef Stories</h1>
-                <h2>Find a Recipe:</h2>
-                <input type="text" name="search" placeholder="Search..">
+                    <img src="img/logo.png">
+                    <h1>Chef Stories</h1>
+                <div class="flex-item-search">
+                    <h2>Find a Recipe:</h2>
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+
             </div>
         </div>
         <div id="slider">
@@ -118,12 +121,22 @@
   <script> src="menu.js"</script>
 
   <script>
-        $(document).ready(function(){
+    $(document).ready(function(){
         $(".burger-toggle").on("click",function(){
             $(".nav-menu-burger").toggleClass("open");
             
         });
     });
+
+    $(document).ready(function(){
+        $(".cart a").hover(function(){
+            $(".cart-icon").css("filter", "contrast(40%)");
+            $(".cart-a").css("filter", "contrast(40%)");
+        }, function(){
+            $(".cart-icon").css("filter", "contrast(100%)");
+         });
+
+    }); 
   </script>
 
 

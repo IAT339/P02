@@ -1,22 +1,20 @@
 body{
     margin:0;
     padding:0;
-    font-family: "Open Sans", sans-serif; font-weight: 600;
+    font-family: "Open Sans", sans-serif;
 }
-
 header {
     width:100%
 }
-footer {
-    width:100%;
-    height:300px;
+.divider {
     background-color:black;
+    height:2.5px;
+    width:100%;
 }
 .content {
+    display:block;
     background-color:white;
-    height:1000px;
 }
-
 .banner{
     min-height: 42px;
     background-color:black;
@@ -24,7 +22,6 @@ footer {
     position:relative;
     white-space:nowrap;
 }
-
 .container{
     max-width:1138px;
     margin: 0 auto;
@@ -33,6 +30,7 @@ footer {
 }
 
 .nav-menu{
+    font-family: "Open Sans", sans-serif; font-weight: 600;
     display:flex;
     margin:0;
     padding:0;
@@ -63,6 +61,10 @@ footer {
 }
 .nav-menu li:hover a:before{
     width:100%;
+}
+
+.nav-menu-company{
+    display:none;
 }
 
 .list {
@@ -109,7 +111,7 @@ h2 {
 h3{
     font-family: Lato, Helvetica, sans-serif;
     font-size:2.1em;
-    margin-top:40px;
+    margin-top:20px;
     margin-bottom:20px;
     color:#0b725a;
     font-variant:small-caps;
@@ -179,7 +181,8 @@ input[type=search] {
 
 #slider {
     overflow:hidden;
-    height:400px;
+    max-height:400px;
+    margin-bottom:15px;
 }
 #slider figure{
     position:relative;
@@ -196,20 +199,19 @@ input[type=search] {
 }
 
 .listing {
-    display:flex;
     flex-basis:30%;
     text-align: left;
     margin-right:15px;
-    flex-direction:column;
+    margin-bottom:20px;
 }
 .listing a {
+    color:black;
     font-size:1.5em;
     font-family: 'Crete Round', serif; font-weight:500;
 }
 
 .listing a, .listing a:visited {
 	text-decoration:none;
-	color:black;
 }
 
 .listing a:hover {
@@ -222,20 +224,21 @@ input[type=search] {
 }
 .listing p{
     margin-top:10px;
-    font-size:.8em;
+    font-size:.9em; 
 }
 
 .button-nav {
     display: inline-block;
     border:none;
     color: #fff;
-    padding:10px;
+    margin-top:20px;
+    margin-bottom:40px;
+    padding: 0.6em 0.6em;
     background-color: #4ECDC4;
     font-size:.7em;
     cursor:pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    align-self: auto;
 }
 
 .button-nav:hover{
@@ -335,8 +338,173 @@ img{
     widows:100%;
     height:auto;
 }
-.nav-menu-company{
+.welcome-box {
+    display:flex;
+    flex-direction:column;
+    border: 1px solid #ccc;
+    flex:2;
+    margin-left:30px;
+    margin-bottom:120px;
+    height:50%;
+    
+}
+.welcome-box h{
+    font-family: 'Crete Round', serif; font-weight: 500;
+    color:black;
+    font-size:1.65em;
+    margin:0 20px;
+    padding-top:30px;
+    text-align:center;
+}
+.welcome-box p{
+    font-size:.9em;
+    margin: 20px 30px;
+    text-align:center;
+}
+.welcome-box a {
+    font-family: Lato, Helvetica, sans-serif;
+    font-size:1.35em;
+    color:green;
+    margin: 10px 20px;
+    text-decoration:none;
+    text-align:center;
+    padding-bottom:30px;
+}
+.welcome-box a:hover {
+    text-decoration: underline;
+}
+#welcome-box-2 {
     display:none;
+}
+
+/* Sidebar*/
+.sidebar {
+    margin-top:15px;
+    margin-right:25px;
+    width: 15%;
+}
+.sidebar ul {
+    list-style:none;
+    padding:0;
+    font-size:.9em;
+}
+.sidebar li {
+    padding:8px 5px 5px 10px;
+    border-bottom: 1px solid rgb(221, 219, 219);
+}
+.sidebar a{
+    text-decoration:none;
+    color:black;
+}
+.sidebar a:hover{
+    font-weight: 700;
+    text-decoration:none;
+    color:black;
+}
+#focusmeplease{
+    font-weight: 800;
+    text-decoration:none;
+    color:black;
+}
+
+/* About Us Content */
+#about-us-content {
+    width:55%;
+}
+#about-us-content img{
+    width:100%;
+    margin-bottom:25px;
+}
+#about-us-content h{
+    font-weight:700;
+}
+#about-us-content p{
+    word-spacing:.5px;
+    font-size:.95em;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+/* Popular recipes box */
+#box-popular{
+    display:flex;
+    flex-direction:column;
+    border: 1px solid #ccc;
+    margin-left:30px;
+    margin-top:35px;
+    width:23%;
+    height:50%;
+}
+#box-popular h{
+    font-family: 'Crete Round', serif; font-weight: 500;
+    color:black;
+    font-size:1.3em;
+    margin:5px 15px;
+    text-align:center;
+}
+#box-popular .listing {
+    margin:10px;
+}
+#box-popular .listing button{
+    margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer elements */
+footer {
+    display:block;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #000;
+    text-align: center;
+    margin-top:40px;
+}
+footer a {
+    text-decoration:none;
+    color:white;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+.topFooter {
+    position: relative;
+    text-align: center;
+    display: inline;
+}
+.topFooter img{
+    max-width:50px;
+    max-height:50px;
+}
+.footerTextA, .footerTextB{
+    color: white;
+}
+.footerTextB {
+    font-size: 0.7rem;
+}
+.footerTextB p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
 

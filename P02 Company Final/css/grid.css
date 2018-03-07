@@ -39,10 +39,9 @@ div{
 }
 
 @media (max-width:43em) {
-    .container-flex-split ul, .header-flex h1, .header-flex img, h2{
+    .container-flex-split ul, .header-flex h1, .header-flex img, .header-flex h2{
         display:none;
     }
-
     .burger-toggle{
         display:flex;
         cursor:pointer;
@@ -79,11 +78,58 @@ div{
     .user {
         display:none;
     }
+   
 }
 @media (min-width:43em) {
     .nav-menu-burger.open{
         display:none;
     }
+}
+@media (max-width:56.25em){
+    #about-sidebar{
+        width:25%;
+    }
+    #box-popular{
+        display:none;
+    }
+    #about-us-content {
+        width:70%;
+    }
+    
+}
+
+@media (max-width:50em){
+    .listing {
+        flex-basis:45%;
+        margin-bottom:40px;
+    }
+    .welcome-box{
+        display:none;
+    }
+    #welcome-box-2{
+        display:flex;
+        margin:0;
+        padding:0;
+    }
+    #about-us-content {
+        width:100%;
+    }
+    #about-sidebar {
+        display:none;
+    }
+
+}
+
+@media (max-width:31.25px){
+    .listing {
+        flex-basis: 100%;
+        margin-right:0;
+        margin-bottom:20px;
+    }
+    .welcome-box{
+        font-size:90%;
+    }
+
 }
 
 

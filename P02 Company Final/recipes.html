@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <header>
+        <div class="banner">
+            <div class="container">
+                <div class="container-flex-split">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="#">browse recipes</a></li>
+                        <li><a href="#">ingredient search</a></li>
+                    </ul>
+                    <a class="burger-toggle">&#9776;</a>
+                    <div class="nav-menu-company">
+                        <a href="index.html"><img src="img/logo.png">
+                        <h1> Chef Stories</h1></a>
+                    </div>
+                    <div class="user">
+                        <img class="user-icon" src="img/user.png">
+                        <a>join</a>
+                        <p>|</p>
+                        <a>sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-menu-burger">
+                <a href="#">about</a>
+                <a href="#">browse recipes</a>
+                <a href="#">ingredient search</a>
+                <a href="#">sign up</a>
+        </div>
+        <div class="container">
+            <div class="header-flex">
+                    <a href="index.html"><img src="img/logo.png">
+                    <h1> Chef Stories</h1></a>
+                <div class="flex-item-search">
+                    <h2>Find a Recipe:</h2>
+                    <input type="text" name="search" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="container-flex">
+                <div class="sidebar" id="about-sidebar">
+                    <ul>
+                        <li><a href="#" id="focusmeplease">Categories</a></li>
+                        <li><a href="#">Dinner Recipes</a></li>
+                        <li><a href="#">Vegetarian Meals</a></li>
+                        <li><a href="#">Salads</a></li>
+                        <li><a href="#">Lunch Recipes</a></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Deserts</a></li>
+                    </ul>
+                </div>
+                <div class="container-flex-col" id="recipes-content">
+                    <h3> browse recipes</h3>
+                </div>
+        </div>
+
+
+    </div>
+        <footer>
+            <div class="topFooter">
+                <img src = "img/logo.png" >
+                 <p class="footerTextA"> Simon Fraser University  250-13450 102 Ave, Surrey, BC V3T 0A3 </p>
+            </div>
+                <p class="footerTextB"> © Copyright. All Rights Reserved   |       
+                    <a href="#">references </a>     |   
+                    <a href="#">style guide </a> 
+                </p> 
+        </footer>
+  </body>
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <script> src="menu.js"</script>
+
+  <script>
+    $(document).ready(function(){
+        $(".burger-toggle").on("click",function(){
+            $(".nav-menu-burger").toggleClass("open");
+            
+        });
+    });
+
+    $(document).ready(function(){
+        $(".cart a").hover(function(){
+            $(".cart-icon").css("filter", "contrast(40%)");
+            $(".cart-a").css("filter", "contrast(40%)");
+        }, function(){
+            $(".cart-icon").css("filter", "contrast(100%)");
+         });
+
+    }); 
+
+  </script>
+
+
+</html>

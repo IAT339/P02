@@ -37,8 +37,47 @@ div{
     align-items:center;
     white-space:nowrap;
 }
+@media (max-width:56.25em){     /* 900 px */
+    #about-sidebar{
+        flex-basis:25%;
+    }
+    #box-popular{
+        display:none;
+    }
+    #about-us-content{
+        flex-basis:70%;
+    }
+    #recipes-sidebar{
+        flex-basis: 15%; 
+    }
+    #list-recipes, #list-ingredients {
+        flex-basis: 30%;
+    }
+}
 
-@media (max-width:43em) {
+@media (max-width:50em){    /* 800 px */
+    .listing {
+        flex-basis:45%;
+        margin-bottom:40px;
+    }
+    .welcome-box{
+        display:none;
+    }
+    #welcome-box-2{
+        display:flex;
+        margin:0;
+        padding:0;
+    }
+    #about-us-content, #recipes-content{
+        flex-basis:100%;
+    }
+    #about-sidebar, #recipes-sidebar {
+        display:none;
+    }
+
+}
+
+@media (max-width:43em) {   /* 688 px */
     .container-flex-split ul, .header-flex h1, .header-flex img, .header-flex h2{
         display:none;
     }
@@ -78,59 +117,42 @@ div{
     .user {
         display:none;
     }
+    .divider {
+        display:none;
+    }
+
    
 }
-@media (min-width:43em) {
+@media (min-width:43em) {      
     .nav-menu-burger.open{
         display:none;
     }
 }
-@media (max-width:56.25em){
-    #about-sidebar{
-        width:25%;
-    }
-    #box-popular{
-        display:none;
-    }
-    #about-us-content {
-        width:70%;
-    }
-    
-}
 
-@media (max-width:50em){
+@media (max-width:31.25em){ /* 500px */
     .listing {
-        flex-basis:45%;
-        margin-bottom:40px;
-    }
-    .welcome-box{
-        display:none;
-    }
-    #welcome-box-2{
-        display:flex;
-        margin:0;
-        padding:0;
-    }
-    #about-us-content {
-        width:100%;
-    }
-    #about-sidebar {
-        display:none;
-    }
-
-}
-
-@media (max-width:31.25px){
-    .listing {
-        flex-basis: 100%;
+        flex-basis:100%;
         margin-right:0;
         margin-bottom:20px;
     }
     .welcome-box{
         font-size:90%;
     }
+    #list-recipes, #list-ingredients{
+        flex-basis:47%;
+        margin-right:10px;
+    }
 
 }
+
+@media (max-width:25em){ /* 400px */
+    #list-recipes, #list-ingredients{
+        flex-basis:100%;
+        margin-right:0;
+    }
+
+}
+
 
 
 

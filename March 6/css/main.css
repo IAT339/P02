@@ -171,7 +171,7 @@ input[type=search] {
 
 #slider {
     overflow:hidden;
-    height:400px;
+    height:auto;
 }
 #slider figure{
     position:relative;

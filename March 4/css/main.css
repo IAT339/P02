@@ -265,14 +265,14 @@ input[type=search] {
     font-size:1.3em;
     display:none;
     text-decoration:none;
-    
+
 }
 
 .nav-menu-burger{
     display:none;
     width:100%;
     background-color: black;
-    height:0; 
+    height:0;
 }
 .nav-menu-burger.open{
     height:auto;
@@ -291,7 +291,7 @@ input[type=search] {
 }
 .nav-menu-burger a:hover{
     background-color:green;
-    
+
 }
 .cart {
     display:flex;
@@ -304,7 +304,7 @@ input[type=search] {
     color:#68C3A3;
     font-size:1em;
     cursor:pointer;
-    
+
 }
 
 .cart a:hover{
@@ -326,4 +326,12 @@ img{
     display:none;
 }
 
-
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000;
+  text-align: center;
+}

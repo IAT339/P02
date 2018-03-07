@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+        <div class="banner">
+            <div class="container">
+                <div class="container-flex-split">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">browse recipes</a></li>
+                        <li><a href="#">ingredient search</a></li>
+                    </ul>
+                    <a class="burger-toggle">&#9776;</a>
+                    <div class="nav-menu-company">
+                        <img src="img/logo.png">
+                        <h1>Chef Stories</h1>
+                    </div>
+                    <div class="cart">
+                        <a><img class="cart-icon" src="img/cart.png"> 4</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="nav-menu-burger">
+                <a href="index.html">home</a>
+                <a href="#">recipes</a>
+                <a href="#">browse recipes</a>
+                <a href="#">ingredient search</a>
+        </div>
+        <div class="container">
+            <div class="header-flex">
+                    <img src="img/logo.png">
+                    <h1>Chef Stories</h1>
+                <div class="flex-item-search">
+                    <h2>Find a Recipe:</h2>
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+
+            </div>
+        </div>
+        <div id="slider">
+            <figure>
+                <img src="img/food1.jpg" >
+                <img src="img/food2.jpg" >
+                <img src="img/food3.jpg" >
+                <img src="img/food4.jpg" >
+                <img src="img/food5.jpg" >
+            </figure>
+        </div>
+
+      </header>
+      <div class="content">
+              <div class="container">
+                  <h3>most recent</h3>
+                  <div class="container-flex">
+                      <div class="listing">
+                          <img src="img/listing.jpg">
+                          <a href="Fettuccine.html">Fettuccine Alfredo with Mushrooms</a>
+                          <p> Fettuccine alfredo with mushrooms brings a mix of cheesy, creamy and earthy flavors together. It's a
+                              restaurant-worthy dish you can totally make at home.</p>
+                          <a href ="Fettuccine.html"> <button class="button-nav"> Read More </button></a>
+                      </div>
+                      <div class="listing">
+                          <img src="img/listing2.jpg">
+                          <a href="Fettuccine.html">Skillet Pork Chops with Cabbage</a>
+                          <p>Pork chops cooked low and slow become so tender and juicy—and so do the cabbage and apples that cook with
+                              them. Serve with a cold beer and imagine yourself at a biergarten in Germany.</p>
+                          <a href ="Fettuccine.html"> <button class="button-nav"> Read More </button></a>
+                      </div>
+                      <div class="listing"></div>
+                  </div>
+
+                  <h3> categories</h3>
+
+                  <div class="container-flex">
+                      <div class="listing">
+                          <img src="img/cat1.jpg">
+                          <a href="dinner.html">Dinner Recipes</a>
+                      </div>
+                      <div class="listing">
+                              <img src="img/cat2.jpg">
+                              <a href="vegetarian.html">Vegetarian Meals</a>
+                      </div>
+                      <div class="listing">
+                              <img src="img/Categories/Salad.jpg">
+                              <a href="potatoSalad.html">Salads</a>
+                      </div>
+                      <div class="listing">
+                              <img src="img/cat4.jpg">
+                              <a href="lunch.html">Lunch Recipes</a>
+                      </div>
+                  </div>
+
+                  <div class="container-flex">
+                    <div class="listing">
+                            <img src="img/Categories/breakfast.jpg">
+                            <a href="breakfast.html">Breakfast</a>
+                    </div>
+                    <div class="listing">
+                            <img src="img/Categories/desert.jpg">
+                            <a href="deserts.html">Deserts</a>
+                    </div>
+                    <div class="listing">
+                            <img src="img/Categories/drinks.jpg">
+                            <a href="drinks.html">Drinks</a>
+                    </div>
+                    <div class="listing">
+                            <img src="img/Categories/snacks.jpg">
+                            <a href="snacks.html">Snacks</a>
+                    </div>
+                  </div>
+
+              </div>
+
+              <div class="footer">
+                  <h5>Subscribe to our newsletter:</h5>
+                  <input type="email" name="search" placeholder="Email address..">
+             </div>
+
+          </div>
+
+
+    </body>
+
+
+
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <script> src="menu.js"</script>
+
+  <script>
+    $(document).ready(function(){
+        $(".burger-toggle").on("click",function(){
+            $(".nav-menu-burger").toggleClass("open");
+
+        });
+    });
+
+    $(document).ready(function(){
+        $(".cart a").hover(function(){
+            $(".cart-icon").css("filter", "contrast(40%)");
+            $(".cart-a").css("filter", "contrast(40%)");
+        }, function(){
+            $(".cart-icon").css("filter", "contrast(100%)");
+         });
+
+    }); 
+  </script>
+
+
+</html>
